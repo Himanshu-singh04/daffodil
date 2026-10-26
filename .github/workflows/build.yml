@@ -13,13 +13,6 @@ on:
         required: true
         type: string
     secrets:
-      # Unused since the remote cache moved to GitHub OIDC; still declared so callers that pass
-      # them keep validating. Remove both (and stop passing them in build_pull_request.yml) once
-      # this version is on develop.
-      NX_KEY:
-        required: false
-      AZURE_STORAGE_CONNECTION_STRING:
-        required: false
       VERCEL_DAFFIO_NEXT_PROJECT_ID:
         required: false
       VERCEL_DAFFIO_PROJECT_ID:
